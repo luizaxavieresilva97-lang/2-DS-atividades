@@ -21,7 +21,7 @@ console.log(todosEntregaram);
 // .toUpperCase() .toLowerCase(): 
 //     coloca as letras em maiúsculas/minúsculas
 const nomes = ["ana", "Bia"];
-const maiusculas = nomes.map(n => n.toUpperCase());
+ maiusculas = nomes.map(n => n.toUpperCase());
 nomes.forEach(n => console.log(n.toUpperCase()));
 nomes.map(n => n.toLowerCase())
     .forEach(n => console.log(n));
