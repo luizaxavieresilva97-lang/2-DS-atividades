@@ -9,23 +9,36 @@ class Animal {
 
 class Gato extends Animal {
     ronronar() {
-        console.log(`a ${this.nome} está ronronando`)
+        console.log(`o ${this.name} está ronronando.`)
     }
-}
-class Cachorro extends Animal {
+ }
+
+ class Cachorro extends Animal {
     abanarRabo() {
-        console.log(`a ${this.nome} está feliz`)
+        console.log(`O ${this.nome} está feliz.`)
     }
-}
+ }
 
-let miya = new Gato("Miya");
-let pandora = new Cachorro("Pandora");
+ let meg = new Gato("Meg");
+ let pandora = new Cachorro("Pandora");
 
-miya.falar("Miau!");
-miya.ronronar();
-pandora.falar("Au Au!");
-pandora.abanarRabo();
+ meg.falar("Miau!");
+ meg.ronronar();
+ pandora.falar("Au Au!")
+ pandora.abanarRabo();
+ 
+ //criar uma classe de outro animal de estimação
+ //cobra, calopsita, ramster, etc...
+ //tem que estender Animal e ter um método próprio
 
-// criar uma classe de outro animal de estimação
-// cobra,calopsita, Hamster, etc...
-// tem que estender Animal e ter um método próprio
+ class Cobra extends Animal {
+    ameaçar() {
+        console.log(`O ${this.nome} está te ameaçando`)
+    }
+ }
+
+ let Danilo = new Cobra ("Danilo");
+
+ Danilo.falar("SSSSSSZZZZZZ!!!!")
+ Danilo.ameaçar();
+ 
