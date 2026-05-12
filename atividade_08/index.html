@@ -1,9 +1,20 @@
-<html>
-    <head>
-        <title>Apredendo DOM</title>
-    </head>
-    <body>
-        <h1>Modelo de Objeto de Documento</h1>
-        <a id="nav" href="index.html">Página Inicial</a>
-    </body>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo DOM</title>
+</head>
+<body>
+        <h1>Modelo de Objeto  de Documentos</h1>
+        <a id="nav" href="index.html"> Pagina inicial</a>
+        <img id="lampada" src="apagada.jpg" alt="">
+        <button onclick="ligar"> ligar</button>
+        <button onclick="desligar">desligar</button>
+        <script>
+            function ligar (){
+                document.getElementById('lampada').src = 'Acessa.jpg';
+            }
+        </script>
+</body>
 </html>
