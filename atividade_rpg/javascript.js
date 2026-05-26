@@ -33,3 +33,12 @@ let listhabilidades = [
     new Habilidade(2, "🪙 skill", 8, 10, 0),
     new Habilidade(1, "💥 supremo", 15, 0, 100),
 ];
+listahabilidades.forEach(Hab => {
+    let btn = document.createElement("button");//<button>
+    btn.innerText = Hab.nome;
+    btn.classList.add("btn","btn-outline-warning");
+    containerBtn.appendChild(btn);
+    btn.onclick = () => {
+        hero.hero_atacar(boss, hab)
+    }
+});
